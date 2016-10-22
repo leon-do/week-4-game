@@ -1,0 +1,24 @@
+button{
+	position: relative;
+	width:100px;
+	height:100px;
+	margin-right:10px;
+}
+.container1{
+	border:5px solid orange;
+}
+.container2{
+	border:5px solid green;
+}
+.container3{
+	border:5px solid red;
+}
+.container4{
+	border:5px solid blue;
+}
+.container5{
+	border:5px solid purple;
+}
+#attackBtn{
+	display:none;
+}
