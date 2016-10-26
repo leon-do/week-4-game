@@ -1,9 +1,9 @@
 // makes 4 buttons and assign random numbers
 	for (i = 0; i < 4; i++){
 
-		var healthPoints = generateRandom(90,100);
-		var attackPower = generateRandom(10,15);
-		var counterAttackPower = generateRandom(10,15);
+		var healthPoints = generateRandom(2000,3000);
+		var attackPower = generateRandom(1,2);
+		var counterAttackPower = generateRandom(10,30);
 
 		$(".container1").append(
 				"<button" +
@@ -106,6 +106,7 @@
 			&& $(".container3").children().is("button") == false
 			&& $(".container4").children().is("button") == false){
 			alert("you win")
+			alert("time for a new mouse")
 		}
 
 
