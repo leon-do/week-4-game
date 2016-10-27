@@ -124,9 +124,12 @@
 
 
 	// FUN!!!!
-	var audio = new Audio("assets/audio/square.mp3");
-    audio.play();
-
+	myAudio = new Audio('assets/audio/square.mp3'); 
+	myAudio.addEventListener('ended', function() {
+	    this.currentTime = 0;
+	    this.play();
+	}, false);
+	myAudio.play();
 
 	$("#attackBtn").on("click",function(){
 		var colors = ["red","blue","yellow","green","purple","orange","brown","cyan","grey","gold","navy","olive","pink"]
