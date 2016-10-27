@@ -128,7 +128,7 @@
 	//audio
 	myAudio = new Audio('assets/audio/square.mp3'); 
 	myAudio.addEventListener('ended', function() {
-		alert('fds')
+		alert('PLAY MORE SQUARES!!!')
 	    this.currentTime = 0;
 	    this.play();
 	}, false);

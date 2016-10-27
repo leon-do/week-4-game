@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Geostar+Fill');
+
+body{
+	font-family: 'Geostar Fill', cursive;
+	font-family: 'Bangers', cursive;
+	font-size: 20px;
+}
 button{
 	position: relative;
 	width:100px;
