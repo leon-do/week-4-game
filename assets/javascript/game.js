@@ -1,7 +1,7 @@
 // makes 4 buttons and assign random numbers
-	for (i = 0; i < 4; i++){
+	for (i = 0; i < 11; i++){
 
-		var healthPoints = generateRandom(2000,3000);
+		var healthPoints = generateRandom(8000,9000);
 		var attackPower = generateRandom(1,2);
 		var counterAttackPower = generateRandom(10,30);
 
@@ -117,6 +117,30 @@
 
 	// used to generate a random number
 	function generateRandom(min,max){
-		var RandomNumber = Math.floor(Math.random()*(max - min) + min)
+		var RandomNumber = Math.round(Math.random()*(max - min) + min)
 		return RandomNumber;
 	}
+
+
+
+	// FUN!!!!
+	var audio = new Audio("assets/audio/square.mp3");
+    audio.play();
+
+
+	$("#attackBtn").on("click",function(){
+		var colors = ["red","blue","yellow","green","purple","orange","brown","cyan","grey","gold","navy","olive","pink"]
+		
+		$("body").css("background-color", colors[generateRandom(0,colors.length)])
+
+	})
+
+
+
+
+
+
+
+
+
+
