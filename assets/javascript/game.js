@@ -124,13 +124,18 @@
 
 
 	// FUN!!!!
+
+	//audio
 	myAudio = new Audio('assets/audio/square.mp3'); 
 	myAudio.addEventListener('ended', function() {
+		alert('fds')
 	    this.currentTime = 0;
 	    this.play();
 	}, false);
 	myAudio.play();
 
+
+	// background color
 	$("#attackBtn").on("click",function(){
 		var colors = ["red","blue","yellow","green","purple","orange","brown","cyan","grey","gold","navy","olive","pink"]
 		
